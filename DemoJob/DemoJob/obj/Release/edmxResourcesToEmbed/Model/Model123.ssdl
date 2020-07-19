@@ -1,0 +1,302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="JOBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="AccountRoles">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+    <Property Name="PassWord" Type="nvarchar(max)" />
+    <Property Name="IdAccountRoles" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar(max)" />
+    <Property Name="Address" Type="nvarchar(max)" />
+    <Property Name="Phone" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="200" />
+    <Property Name="MoreInfo" Type="nvarchar(max)" />
+    <Property Name="IdAccount" Type="int" />
+    <Property Name="Avatar" Type="image" />
+    <Property Name="TimeTable" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Degree">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SchoolTrain" Type="nvarchar(max)" />
+    <Property Name="FacultyTrain" Type="nvarchar(max)" />
+    <Property Name="Diploma" Type="nvarchar(max)" />
+    <Property Name="MajorTrain" Type="nvarchar(max)" />
+    <Property Name="Ranked" Type="nvarchar" MaxLength="100" />
+    <Property Name="TimeBegin" Type="nvarchar" MaxLength="40" />
+    <Property Name="TimeEnd" Type="nvarchar" MaxLength="40" />
+    <Property Name="MoreInfo" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Experience">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Position" Type="nvarchar(max)" />
+    <Property Name="Company" Type="nvarchar(max)" />
+    <Property Name="TimeBegin" Type="nvarchar" MaxLength="40" />
+    <Property Name="TimeEnd" Type="nvarchar" MaxLength="40" />
+    <Property Name="MoreInfo" Type="nvarchar(max)" />
+    <Property Name="IsHaveExperience" Type="bit" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCompany" Type="int" Nullable="false" />
+    <Property Name="TypeJob" Type="nvarchar(max)" />
+    <Property Name="NatureOfJob" Type="nvarchar(max)" />
+    <Property Name="Major" Type="nvarchar(max)" />
+    <Property Name="Place" Type="nvarchar(max)" />
+    <Property Name="Request" Type="nvarchar(max)" />
+    <Property Name="Descriptions" Type="nvarchar(max)" />
+    <Property Name="MoreInfo" Type="nvarchar(max)" />
+    <Property Name="Title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Salary" Type="nvarchar(max)" />
+    <Property Name="Timeregister" Type="nvarchar(max)" />
+    <Property Name="Link" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="LanguageSkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="English" Type="int" />
+    <Property Name="French" Type="int" />
+    <Property Name="Russian" Type="int" />
+    <Property Name="Korean" Type="int" />
+    <Property Name="Chinese" Type="int" />
+    <Property Name="Japanese" Type="int" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DisplayName" Type="nvarchar(max)" />
+    <Property Name="Position" Type="nvarchar" MaxLength="100" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar(max)" />
+    <Property Name="Place" Type="nvarchar(max)" />
+    <Property Name="Birthday" Type="nvarchar" MaxLength="30" />
+    <Property Name="Sex" Type="nvarchar" MaxLength="20" />
+    <Property Name="MarryStatus" Type="nvarchar" MaxLength="100" />
+    <Property Name="AimJob" Type="nvarchar(max)" />
+    <Property Name="PersonalSkill" Type="nvarchar(max)" />
+    <Property Name="IdLanguageSkill" Type="int" />
+    <Property Name="IdOfficeSkill" Type="int" />
+    <Property Name="IdDegree" Type="int" />
+    <Property Name="IdExperience" Type="int" />
+    <Property Name="IdAccount" Type="int" />
+    <Property Name="Avatar" Type="image" />
+  </EntityType>
+  <EntityType Name="OfficeSkill">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Word" Type="int" />
+    <Property Name="Excel" Type="int" />
+    <Property Name="PowerPoint" Type="int" />
+    <Property Name="Outlook" Type="int" />
+  </EntityType>
+  <EntityType Name="Register">
+    <Key>
+      <PropertyRef Name="IdAccount" />
+      <PropertyRef Name="IdJob" />
+    </Key>
+    <Property Name="IdAccount" Type="int" Nullable="false" />
+    <Property Name="IdJob" Type="int" Nullable="false" />
+    <Property Name="STT" Type="int" />
+  </EntityType>
+  <Association Name="FK__Accounts__IdAcco__1A14E395">
+    <End Role="AccountRoles" Type="Self.AccountRoles" Multiplicity="1" />
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Accounts">
+        <PropertyRef Name="IdAccountRoles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Company__IdAccou__1B0907CE">
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="0..1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="IdAccount" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Job__IdCompany__1BFD2C07">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Job" Type="Self.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="IdCompany" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Register__IdAcco__1DE57479">
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="1" />
+    <End Role="Register" Type="Self.Register" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Register">
+        <PropertyRef Name="IdAccount" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Register__IdJob__1ED998B2">
+    <End Role="Job" Type="Self.Job" Multiplicity="1" />
+    <End Role="Register" Type="Self.Register" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Job">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Register">
+        <PropertyRef Name="IdJob" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEMBER_IdAccount">
+    <End Role="Accounts" Type="Self.Accounts" Multiplicity="0..1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="IdAccount" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEMBER_IdDegree">
+    <End Role="Degree" Type="Self.Degree" Multiplicity="0..1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Degree">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="IdDegree" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEMBER_IdExperience">
+    <End Role="Experience" Type="Self.Experience" Multiplicity="0..1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Experience">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="IdExperience" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEMBER_IdLanguageSkill">
+    <End Role="LanguageSkill" Type="Self.LanguageSkill" Multiplicity="0..1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LanguageSkill">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="IdLanguageSkill" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MEMBER_IdOfficeSkill">
+    <End Role="OfficeSkill" Type="Self.OfficeSkill" Multiplicity="0..1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="OfficeSkill">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="IdOfficeSkill" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="JOBModelStoreContainer">
+    <EntitySet Name="AccountRoles" EntityType="Self.AccountRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Accounts" EntityType="Self.Accounts" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Degree" EntityType="Self.Degree" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Experience" EntityType="Self.Experience" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Job" EntityType="Self.Job" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="LanguageSkill" EntityType="Self.LanguageSkill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Member" EntityType="Self.Member" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="OfficeSkill" EntityType="Self.OfficeSkill" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Register" EntityType="Self.Register" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Accounts__IdAcco__1A14E395" Association="Self.FK__Accounts__IdAcco__1A14E395">
+      <End Role="AccountRoles" EntitySet="AccountRoles" />
+      <End Role="Accounts" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Company__IdAccou__1B0907CE" Association="Self.FK__Company__IdAccou__1B0907CE">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Job__IdCompany__1BFD2C07" Association="Self.FK__Job__IdCompany__1BFD2C07">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Job" EntitySet="Job" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Register__IdAcco__1DE57479" Association="Self.FK__Register__IdAcco__1DE57479">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Register" EntitySet="Register" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Register__IdJob__1ED998B2" Association="Self.FK__Register__IdJob__1ED998B2">
+      <End Role="Job" EntitySet="Job" />
+      <End Role="Register" EntitySet="Register" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEMBER_IdAccount" Association="Self.FK_MEMBER_IdAccount">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Member" EntitySet="Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEMBER_IdDegree" Association="Self.FK_MEMBER_IdDegree">
+      <End Role="Degree" EntitySet="Degree" />
+      <End Role="Member" EntitySet="Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEMBER_IdExperience" Association="Self.FK_MEMBER_IdExperience">
+      <End Role="Experience" EntitySet="Experience" />
+      <End Role="Member" EntitySet="Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEMBER_IdLanguageSkill" Association="Self.FK_MEMBER_IdLanguageSkill">
+      <End Role="LanguageSkill" EntitySet="LanguageSkill" />
+      <End Role="Member" EntitySet="Member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MEMBER_IdOfficeSkill" Association="Self.FK_MEMBER_IdOfficeSkill">
+      <End Role="OfficeSkill" EntitySet="OfficeSkill" />
+      <End Role="Member" EntitySet="Member" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

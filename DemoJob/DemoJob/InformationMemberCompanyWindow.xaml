@@ -1,0 +1,362 @@
+﻿<Window x:Class="DemoJob.InformationMemberCompanyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:DemoJob"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        DataContext="{StaticResource InfoMemberCompanyVM}"
+        FontFamily="Arial"   Icon="Picture/LOGOMAIN.ico"
+        Name="infoMemberCompanyVM" Background="#f8f4e9"
+        Title="Thông tin ứng viên" Height="950" Width="850" WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <Style TargetType="Expander">
+
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="5"></Setter>
+        </Style>
+
+    </Window.Resources>
+    <ScrollViewer>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="177*"></RowDefinition>
+                <RowDefinition Height="797*"></RowDefinition>
+                <!--<RowDefinition Height="111*"></RowDefinition>
+            <RowDefinition Height="89*"></RowDefinition>
+            <RowDefinition Height="122*"></RowDefinition>
+            <RowDefinition Height="121*"></RowDefinition>
+            <RowDefinition Height="122*"></RowDefinition>
+            <RowDefinition Height="121*"></RowDefinition>-->
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0" Margin="0 10 0 0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="169*"></ColumnDefinition>
+                    <ColumnDefinition Width="623*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0">
+                    <!-- Để chèn hình avt -->
+                    <Border Margin="3" BorderBrush="Black" BorderThickness="1" ToolTip="Nhấn để thay đổi avatar">
+                        <Image Grid.Column="0" Source="{Binding Avatar,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}" >
+                           
+                        </Image>
+                    </Border>
+
+                </Grid>
+                <Grid Grid.Column="1"  Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="73*"></RowDefinition>
+                        <RowDefinition Height="117*"></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <StackPanel Grid.Row="0" Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Account" Height="34" Width="47" />
+                            <TextBlock
+                            x:Name="CommentTextBox" Text="{Binding DisplayName,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                            TextWrapping="Wrap"  Width="577" FontSize="20" />
+                        </StackPanel>
+                        <StackPanel  Grid.Row="1" Orientation="Horizontal" >
+                            <materialDesign:PackIcon Kind="Briefcase" Height="35" Width="47" />
+                            <TextBlock
+                            x:Name="CommentTextBox1" Text="{Binding Position,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                            TextWrapping="Wrap"
+                            FontSize="20" Width="575"
+                         />
+                        </StackPanel>
+                    </Grid>
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="363*"></ColumnDefinition>
+                            <ColumnDefinition Width="260*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Horizontal" >
+                                <materialDesign:PackIcon Kind="Phone"  Height="37" Width="46"/>
+                                <TextBlock 
+                                x:Name="CommentTextBox2" Text="{Binding PhoneNumber,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                                TextWrapping="Wrap"
+                                FontSize="20"
+                                Width="300" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                                <materialDesign:PackIcon Kind="Email" Height="37" Width="46" />
+                                <TextBlock 
+                                x:Name="CommentTextBox3" Text="{Binding Email,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                                TextWrapping="Wrap"
+                                FontSize="20"
+                                Width="300" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                                <materialDesign:PackIcon Kind="MapMarker" Height="37" Width="46" />
+                                <TextBlock 
+                                x:Name="CommentTextBox4" Text="{Binding Place,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                                TextWrapping="Wrap"
+                                FontSize="20"
+                                Width="300" />
+                            </StackPanel>
+                        </Grid>
+                        <Grid Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <StackPanel Grid.Row="0" Orientation="Horizontal" >
+                                <materialDesign:PackIcon Kind="Cake" Height="37" Width="46" />
+                                <TextBlock 
+                                Text="{Binding Birthday,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                                TextWrapping="Wrap"
+                                FontSize="20"
+                                Width="300" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                                <materialDesign:PackIcon Kind="GenderMaleFemale" Height="37" Width="46" />
+                                <TextBlock 
+                                x:Name="CommentTextBox5" Text="{Binding Sex,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                                TextWrapping="Wrap"
+                                FontSize="20"
+                                Width="200" />
+                            </StackPanel>
+                            <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                                <materialDesign:PackIcon Kind="HomeHeart" Height="37" Width="46" />
+                                <TextBlock 
+                                x:Name="CommentTextBox6" Text="{Binding MarryStatus,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                                TextWrapping="Wrap"
+                                FontSize="20"
+                                Width="200" />
+                            </StackPanel>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <StackPanel Grid.Row="1" Orientation="Vertical" Margin="0,0,0,10">
+                <Border BorderThickness="1" BorderBrush="#A4A4A4"  CornerRadius="5" Margin="15 5 15 5">
+                    <StackPanel  Background="White">
+                        <StackPanel Grid.Row="0" Orientation="Horizontal" >
+                            <materialDesign:PackIcon Kind="Heart" Height="39" Width="87" />
+                            <TextBlock Text="Mục tiêu nghề nghiệp" FontWeight="Bold" FontSize="25"  Width="267" />
+                        </StackPanel>
+                        <TextBlock Text="{Binding AimJob,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox7" FontSize="17" TextWrapping="Wrap"
+                     Margin="30,0,46,0" />
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="#A4A4A4"  CornerRadius="5" Margin="15 5 15 5">
+                    <StackPanel  Background="White">
+                        <StackPanel Grid.Row="0" Orientation="Horizontal" >
+                            <materialDesign:PackIcon Kind="AccountStar" Height="39" Width="87" />
+                            <TextBlock Text="Kỹ năng bản thân" FontWeight="Bold" FontSize="25"  Width="267" />
+                        </StackPanel>
+                        <TextBlock
+                    x:Name="CommentTextBox9" FontSize="17" Text="{Binding PersonalSkill,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                     Margin="30,0,46,0"
+                        TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="#A4A4A4"  CornerRadius="5" Margin="15 5 15 5">
+                    <StackPanel  Background="White">
+                        <StackPanel Grid.Row="0" Orientation="Horizontal"  >
+                            <materialDesign:PackIcon Kind="BookOpenPageVariant" Height="39" Width="87" />
+                            <TextBlock Text="Trình độ ngoại ngữ" FontWeight="Bold" FontSize="25"  Width="267" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0 0,0" Height="39">
+                            <TextBlock Text="Tiếng Anh" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar 
+                                Value="{Binding English,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                                x:Name="BasicRatingBar" Foreground="#FFF77839" IsReadOnly="True" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Tiếng Pháp" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839"
+                    Value="{Binding French,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+x:Name="BasicRatingBar1" IsReadOnly="True"  />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Tiếng Nga" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding Russian,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar2"  />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Tiếng Hàn" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding Korean,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar3" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Tiếng Trung" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding Chinese,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar4"  />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Tiếng Nhật" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding Japanese,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar5" Width="127" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="#A4A4A4"  CornerRadius="5" Margin="15 5 15 5">
+                    <StackPanel  Background="White">
+                        <StackPanel Grid.Row="0" Orientation="Horizontal"  >
+                            <materialDesign:PackIcon Kind="Office" Height="39" Width="87" />
+                            <TextBlock Text="Trình độ văn phòng" FontWeight="Bold" FontSize="25"  Width="267" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Ms Word" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding Word,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar6"  />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Ms Excel" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding Excel,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar7"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Ms Power Point" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding PowerPoint,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar8"  />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="120,0,0,0" Height="39">
+                            <TextBlock Text="Ms Outlook" FontSize="20" Width="164"   ></TextBlock>
+                            <materialDesign:RatingBar Foreground="#FFF77839" IsReadOnly="True"
+                    Value="{Binding Outlook,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True,Mode=TwoWay}"
+                    x:Name="BasicRatingBar9" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="#A4A4A4"  CornerRadius="5" Margin="15 5 15 5">
+                    <StackPanel  Background="White">
+                        <StackPanel Grid.Row="0" Orientation="Horizontal"  >
+                            <materialDesign:PackIcon Kind="Bookmark"  Height="39" Width="87" />
+                            <TextBlock Text="Học Vấn / Bằng cấp" FontWeight="Bold" FontSize="25"  Width="267" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="80,0,0,0" Width="394">
+                                <TextBlock Text="‣ Trường, cơ sở, trung tâm đào tạo" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock Text="{Binding SchoolTrainDegree,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox8" FontSize="17"
+                     Margin="30,0,46,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Width="292" >
+                                <TextBlock Text="‣ Khoa đào tạo" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock Text="{Binding FacultyTrainDegree,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox10" FontSize="17"
+                    TextWrapping="Wrap" Margin="30,0,10,0" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="80,0,0,0">
+                            <TextBlock Text="‣ Tên bằng cấp chứng chỉ" FontSize="17" FontWeight="Bold" ></TextBlock>
+                            <TextBlock Text="{Binding DiplomaDegree,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox11" FontSize="17"
+                   TextWrapping="Wrap" Margin="30,0,46,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="80,0,0,0" Width="394">
+                                <TextBlock Text="‣ Chuyên ngành đào tạo" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock Text="{Binding MajorTrainDegree,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox12" FontSize="17"
+                    TextWrapping="Wrap" Margin="30,0,46,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Width="292" >
+                                <TextBlock Text="‣ Xếp loại" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock Text="{Binding RankedDegree,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox13" FontSize="17"
+                    TextWrapping="Wrap" Margin="30,0,10,0" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="80,0,0,0" Width="394">
+                                <TextBlock Text="‣ Thời gian bắt đầu nhập học" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock  Text="{Binding TimeBeginDegree, StringFormat=d/M/yyyy}"
+                                    FontSize="13"
+                                        TextWrapping="Wrap"
+                                     Margin="28,0,157,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Width="292" >
+                                <TextBlock Text="‣ Thời gian kết thúc" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock  Text="{Binding TimeEndDegree, StringFormat=d/M/yyyy}"
+                                    FontSize="13"
+                                        TextWrapping="Wrap"
+                                     Margin="28,0,70,0" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="80,0,0,0">
+                            <TextBlock Text="‣ Thông tin bổ sung" FontSize="17" FontWeight="Bold" ></TextBlock>
+                            <TextBlock Text="{Binding MoreInfoDegree,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox16" FontSize="17"
+                    Margin="30,0,46,0" TextWrapping="Wrap"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Border BorderThickness="1" BorderBrush="#A4A4A4"  CornerRadius="5" Margin="15 5 15 5">
+                    <StackPanel  Background="White">
+                        <StackPanel Grid.Row="0" Orientation="Horizontal"  >
+                            <materialDesign:PackIcon Kind="Network"  Height="39" Width="87" />
+                            <TextBlock Text="Kinh nghiệm làm việc (chưa có kinh nghiệm)" FontWeight="Bold" FontSize="25"  Width="527" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="80,0,0,0" Width="394">
+                                <TextBlock Text="‣ Chức danh / vị trí" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock Text="{Binding PositionExperience,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox20" FontSize="17"
+                    TextWrapping="Wrap" Margin="30,0,46,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Width="292" >
+                                <TextBlock Text="‣ Công ty" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock Text="{Binding CompanyExperience,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox21" FontSize="17"
+                    TextWrapping="Wrap" Margin="30,0,10,0" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="80,0,0,0" Width="394">
+                                <TextBlock Text="‣ Thời gian bắt đầu" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock Text="{Binding TimeBeginExperience, StringFormat=d/M/yyyy}"
+                                    FontSize="17"
+                                       TextWrapping="Wrap"
+                                     Margin="28,0,157,0" />
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical" Width="292" >
+                                <TextBlock Text="‣ Thời gian kết thúc" FontSize="17" FontWeight="Bold" ></TextBlock>
+                                <TextBlock  Text="{Binding TimeEndExperience, StringFormat=d/M/yyyy}"
+                                    FontSize="17"
+                                        TextWrapping="Wrap"
+                                    Margin="28,0,70,0" />
+                            </StackPanel>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" Margin="80,0,0,0">
+                            <TextBlock Text="‣ Mô tả công việc" FontSize="17" FontWeight="Bold" ></TextBlock>
+                            <TextBlock Text="{Binding MoreInfoExperience,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"
+                    x:Name="CommentTextBox22" FontSize="17"
+                    TextWrapping="Wrap" Margin="30,0,46,0" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+                <Grid Height="58">
+                    <Button Background="#F77839" Height="45" Width="200"
+                                FontSize="25"
+                                Command="{Binding ExitCommand}"
+                                CommandParameter="{Binding ElementName=infoMemberCompanyVM}"
+                            Content="Thoát"></Button>
+                </Grid>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

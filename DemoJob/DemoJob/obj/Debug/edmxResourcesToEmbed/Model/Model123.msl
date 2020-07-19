@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JOBModelStoreContainer" CdmEntityContainer="JOBEntities">
+    <EntitySetMapping Name="AccountRoles">
+      <EntityTypeMapping TypeName="JOBModel.AccountRole">
+        <MappingFragment StoreEntitySet="AccountRoles">
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="JOBModel.Account">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="IdAccountRoles" ColumnName="IdAccountRoles" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="JOBModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="TimeTable" ColumnName="TimeTable" />
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="IdAccount" ColumnName="IdAccount" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Degrees">
+      <EntityTypeMapping TypeName="JOBModel.Degree">
+        <MappingFragment StoreEntitySet="Degree">
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="TimeBegin" ColumnName="TimeBegin" />
+          <ScalarProperty Name="Ranked" ColumnName="Ranked" />
+          <ScalarProperty Name="MajorTrain" ColumnName="MajorTrain" />
+          <ScalarProperty Name="Diploma" ColumnName="Diploma" />
+          <ScalarProperty Name="FacultyTrain" ColumnName="FacultyTrain" />
+          <ScalarProperty Name="SchoolTrain" ColumnName="SchoolTrain" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Experiences">
+      <EntityTypeMapping TypeName="JOBModel.Experience">
+        <MappingFragment StoreEntitySet="Experience">
+          <ScalarProperty Name="IsHaveExperience" ColumnName="IsHaveExperience" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="TimeEnd" ColumnName="TimeEnd" />
+          <ScalarProperty Name="TimeBegin" ColumnName="TimeBegin" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jobs">
+      <EntityTypeMapping TypeName="JOBModel.Job">
+        <MappingFragment StoreEntitySet="Job">
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="Timeregister" ColumnName="Timeregister" />
+          <ScalarProperty Name="Salary" ColumnName="Salary" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+          <ScalarProperty Name="Descriptions" ColumnName="Descriptions" />
+          <ScalarProperty Name="Request" ColumnName="Request" />
+          <ScalarProperty Name="Place" ColumnName="Place" />
+          <ScalarProperty Name="Major" ColumnName="Major" />
+          <ScalarProperty Name="NatureOfJob" ColumnName="NatureOfJob" />
+          <ScalarProperty Name="TypeJob" ColumnName="TypeJob" />
+          <ScalarProperty Name="IdCompany" ColumnName="IdCompany" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LanguageSkills">
+      <EntityTypeMapping TypeName="JOBModel.LanguageSkill">
+        <MappingFragment StoreEntitySet="LanguageSkill">
+          <ScalarProperty Name="Japanese" ColumnName="Japanese" />
+          <ScalarProperty Name="Chinese" ColumnName="Chinese" />
+          <ScalarProperty Name="Korean" ColumnName="Korean" />
+          <ScalarProperty Name="Russian" ColumnName="Russian" />
+          <ScalarProperty Name="French" ColumnName="French" />
+          <ScalarProperty Name="English" ColumnName="English" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Members">
+      <EntityTypeMapping TypeName="JOBModel.Member">
+        <MappingFragment StoreEntitySet="Member">
+          <ScalarProperty Name="Avatar" ColumnName="Avatar" />
+          <ScalarProperty Name="IdAccount" ColumnName="IdAccount" />
+          <ScalarProperty Name="IdExperience" ColumnName="IdExperience" />
+          <ScalarProperty Name="IdDegree" ColumnName="IdDegree" />
+          <ScalarProperty Name="IdOfficeSkill" ColumnName="IdOfficeSkill" />
+          <ScalarProperty Name="IdLanguageSkill" ColumnName="IdLanguageSkill" />
+          <ScalarProperty Name="PersonalSkill" ColumnName="PersonalSkill" />
+          <ScalarProperty Name="AimJob" ColumnName="AimJob" />
+          <ScalarProperty Name="MarryStatus" ColumnName="MarryStatus" />
+          <ScalarProperty Name="Sex" ColumnName="Sex" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Place" ColumnName="Place" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Position" ColumnName="Position" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OfficeSkills">
+      <EntityTypeMapping TypeName="JOBModel.OfficeSkill">
+        <MappingFragment StoreEntitySet="OfficeSkill">
+          <ScalarProperty Name="Outlook" ColumnName="Outlook" />
+          <ScalarProperty Name="PowerPoint" ColumnName="PowerPoint" />
+          <ScalarProperty Name="Excel" ColumnName="Excel" />
+          <ScalarProperty Name="Word" ColumnName="Word" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Registers">
+      <EntityTypeMapping TypeName="JOBModel.Register">
+        <MappingFragment StoreEntitySet="Register">
+          <ScalarProperty Name="STT" ColumnName="STT" />
+          <ScalarProperty Name="IdJob" ColumnName="IdJob" />
+          <ScalarProperty Name="IdAccount" ColumnName="IdAccount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,112 @@
+﻿<Window x:Class="DemoJob.InformationJobWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:DemoJob"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        mc:Ignorable="d"
+        DataContext="{StaticResource InfoJobVM}"
+        Name="InfoJob"  Icon="Picture/LOGOMAIN.ico"
+        Title="Chi tiết công việc"  Height="900" Width="1400" WindowStartupLocation="CenterScreen"  Opacity="0.9">
+    <Window.Background>
+        <ImageBrush ImageSource="Picture/InforJob.jpg" Stretch="UniformToFill"/>
+    </Window.Background>
+    
+    <Window.Resources>
+        <Style TargetType="Expander">
+            
+        </Style>
+    </Window.Resources>
+
+    <ScrollViewer>
+    <DockPanel LastChildFill="False" >
+        <Grid DockPanel.Dock="Right" Width="65" Background="#F77839" Opacity="0.7">
+            
+        </Grid>
+        <Grid DockPanel.Dock="Right" Width="70" Background="#F77839" Opacity="0.5">
+
+        </Grid>
+        <Grid DockPanel.Dock="Right" Width="75" Background="#F77839" Opacity="0.3">
+ 
+        </Grid>
+            <materialDesign:Card  DockPanel.Dock="Left" Width="900" MinHeight="900" >
+            <materialDesign:Card.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" Opacity="0.4">
+                    <GradientStop Color="#212A37" Offset="0"/>
+                    <GradientStop Color="#212A37" Offset="1"/>
+                </LinearGradientBrush>
+            </materialDesign:Card.Background>
+            <StackPanel>
+                <TextBlock Padding="30 30 0 0" Text="{Binding Title, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                           FontSize="50" Foreground="White" FontWeight="Bold" TextWrapping="WrapWithOverflow"
+                           >
+                </TextBlock>
+                <StackPanel>
+                    <TextBlock Margin="30 0" Text="Yêu cầu công việc" FontSize="25" FontWeight="Bold" Foreground="#FFFF4600"></TextBlock>
+                    <TextBlock TextWrapping="WrapWithOverflow"
+                         FontSize="22"  Foreground="White"
+                         Margin="40 5 40 0"
+                         Text="{Binding Request, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" >
+                    </TextBlock>
+                </StackPanel>
+                    <StackPanel>
+                    <TextBlock Margin="30 0" Text="Mô tả công việc" FontSize="25" FontWeight="Bold" Foreground="#FFFF4600"></TextBlock>
+                    <TextBlock TextWrapping="WrapWithOverflow"
+                         FontSize="22"  Foreground="White"
+                         Margin="40 5 40 0"
+                         Text="{Binding Descriptions, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" >
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel>
+                    <TextBlock Margin="30 0" Text="Thông tin thêm" FontSize="25" FontWeight="Bold" Foreground="#FFFF4600"></TextBlock>
+                    <TextBlock TextWrapping="WrapWithOverflow"
+                         FontSize="22"  Foreground="White"
+                         Margin="40 5 40 0"
+                         Text="{Binding MoreInfo, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}" >
+                    </TextBlock>
+                </StackPanel>
+                <StackPanel Grid.Row="4"  Height="200">
+                    <TextBlock Margin="30 0" Text="Thông tin công ty" FontSize="25" FontWeight="Bold" Foreground="#FFFF4600"></TextBlock>
+                    <StackPanel Margin="40 5 40 0">
+                        <DockPanel>
+                            <TextBlock FontSize="20" Text="Tên công ty: " Width="150" Foreground="White"></TextBlock>
+                            <TextBlock FontSize="20" Text="{Binding DisplayName, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                                   TextWrapping="WrapWithOverflow" Foreground="White">
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel>
+                            <TextBlock FontSize="20" Text="Địa chỉ: " Width="150" Foreground="White"></TextBlock>
+                            <TextBlock FontSize="20" Text="{Binding Address, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                                   TextWrapping="WrapWithOverflow" Foreground="White">
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel>
+                            <TextBlock FontSize="20" Text="Số điện thoại: " Width="150" Foreground="White"></TextBlock>
+                            <TextBlock FontSize="20" Text="{Binding Phone, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                                   TextWrapping="WrapWithOverflow" Foreground="White">
+                            </TextBlock>
+                        </DockPanel>
+                        <DockPanel>
+                            <TextBlock FontSize="20" Text="Email: " Width="150" Foreground="White"></TextBlock>
+                            <TextBlock FontSize="20" Text="{Binding Email, NotifyOnSourceUpdated=True, UpdateSourceTrigger=PropertyChanged}"
+                                   TextWrapping="WrapWithOverflow" Foreground="White">
+                            </TextBlock>
+                        </DockPanel>
+                    </StackPanel>
+                </StackPanel>
+            </StackPanel>
+        </materialDesign:Card>
+            <Grid DockPanel.Dock="Bottom" Height="100">
+                <Button Grid.Column="0" Height="50" Background="#F77839" Margin="15" Width="150"  
+                        BorderBrush="#FFE49049"
+                        Content="Thoát" FontSize="24"
+                        Command="{Binding ExitCommand}"
+                        CommandParameter="{Binding ElementName=InfoJob}"/>
+              
+            </Grid>
+        </DockPanel>
+    </ScrollViewer>
+    
+</Window>

@@ -1,0 +1,239 @@
+﻿<Window x:Class="DemoJob.RegisterJob"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:DemoJob"
+        mc:Ignorable="d"
+        DataContext="{StaticResource RegisterJobVM}"
+        Name="registerJob"  Icon="Picture/LOGOMAIN.ico"
+        Title="Đăng tuyển dụng mới" Height="900" Width="1400" WindowStartupLocation="CenterScreen" >
+
+    <Window.Resources>
+        <Style TargetType="TextBlock" x:Key="tb">
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="tbTilte">
+            <Setter Property="Foreground" Value="#212A37"></Setter>
+            <Setter Property="FontSize" Value="32"></Setter>
+            <Setter Property="FontWeight" Value="DemiBold"></Setter>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="tbTilteExtra">
+            <Setter Property="Foreground" Value="#212A37"></Setter>
+            <Setter Property="FontSize" Value="18"></Setter>
+            <Setter Property="FontWeight" Value="Thin"></Setter>
+            <Setter Property="FontStyle" Value="Italic"></Setter>
+        </Style>
+        <Style TargetType="TextBox" x:Key="txb">
+            <Setter Property="Foreground" Value="White"></Setter>
+        </Style>
+    </Window.Resources>
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="85*"></ColumnDefinition>
+                <ColumnDefinition Width="263*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <!--Thông tin công tin-->
+            <Grid Grid.Column="0" Background="#212A37">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="302*"></RowDefinition>
+                    <RowDefinition Height="97*"></RowDefinition>
+                    <RowDefinition Height="470*"></RowDefinition>
+                    <RowDefinition Height="75*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Ellipse Grid.Row="0" Height="200" Width="200" Margin="0 90 0 0" >
+                    <Ellipse.Fill>
+                        <ImageBrush  Stretch="Uniform" ImageSource="{Binding Avatar,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged,NotifyOnSourceUpdated=True}"></ImageBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Grid Grid.Row="1" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Grid.Row="0" Style="{StaticResource tb}" FontSize="25" FontWeight="Bold"
+                           TextAlignment="Center" VerticalAlignment="Center" Text="{Binding DisplayName}" ></TextBlock>
+
+                    <TextBlock  Grid.Row="1" TextAlignment="Center" Style="{StaticResource tb}" FontSize="22" Text="{Binding IDCustom}"></TextBlock>
+
+                </Grid>
+                <StackPanel Grid.Row="2" Orientation="Vertical" Margin="0 5 0 0">
+                    <Border BorderBrush="Black" BorderThickness="0 0 0 0" Margin="50 5 0 0">
+                        <StackPanel Grid.Row="2" Orientation="Horizontal" >
+                            <Image Source="Picture/location-outline.png" Height="30" Width="25"></Image>
+                            <TextBlock Style="{StaticResource tb}"
+                                        x:Name="CommentTextBox4"
+                                        Text="{Binding Address}"
+                                        FontSize="22" Padding="20 0 0 0" TextWrapping="Wrap"
+                                         >
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderBrush="Black" BorderThickness="0 0 0 0" Margin="50 10 0 0">
+                        <StackPanel Orientation="Horizontal" >
+                            <Image Source="Picture/Phone.png" Height="30" Width="25"></Image>
+                            <TextBlock Style="{StaticResource tb}"
+                                    x:Name="CommentTextBox2"
+                                   Text="{Binding Phone}"
+                                     Padding="20 0 0 0"
+                                    FontSize="22"
+                                     >
+                            </TextBlock>
+
+                        </StackPanel>
+                    </Border>
+                    <Border BorderBrush="Black" BorderThickness="0 0 0 0" Margin="50 10 0 0">
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                            <Image Source="Picture/envelope.png" Height="30" Width="25"></Image>
+                            <TextBlock Style="{StaticResource tb}"
+                                    x:Name="CommentTextBox3"
+                                    FontSize="22" Padding="20 0 0 0"
+                                    Text="{Binding Email}" 
+                                    >
+                                   
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <Border BorderBrush="Black" BorderThickness="0 0 0 0" Margin="50 10 0 0">
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" >
+                            <Image Source="Picture/timetable.png" Height="30" Width="25"></Image>
+                            <TextBlock Style="{StaticResource tb}"
+                                    FontSize="22" Padding="20 0 0 0"
+                                    Text="{Binding TimeTable}" 
+                                    >
+                            </TextBlock>
+                        </StackPanel>
+                    </Border>
+
+                </StackPanel>
+                <Button Grid.Row="3" Height="50" Background="#F77839" Margin="15" Width="200"  
+                        BorderBrush="#FFE49049"
+                        Content="Đăng tuyển" FontSize="24"
+                        Command="{Binding AddJobCommand}"
+                        CommandParameter="{Binding ElementName=registerJob}"/>
+            </Grid>
+
+            <!--Thông tin đăng ký-->
+            <Grid Grid.Column="1" Margin="0 0 0 0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="90*"></RowDefinition>
+                    <RowDefinition Height="780*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <materialDesign:Card Grid.Row="0"
+                materialDesign:ShadowAssist.ShadowDepth="Depth4" Height="80" Padding="30 25 0 0" FontWeight="Bold"
+                         FontSize="35" Foreground="#212A37">
+                    Tạo tuyển dụng mới
+                </materialDesign:Card>
+                <Grid Grid.Row="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="122*"></RowDefinition>
+                        <RowDefinition Height="122*"></RowDefinition>
+                        <RowDefinition Height="122*"></RowDefinition>
+                        <RowDefinition Height="159*"></RowDefinition>
+                        <RowDefinition Height="111*"></RowDefinition>
+                        <RowDefinition Height="124*"></RowDefinition>
+                        <RowDefinition Height="149*"></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <StackPanel Grid.Row="0" Orientation="Vertical" Margin="35 10 0 0" >
+                        <TextBlock Text="Tiêu đề*" Style="{StaticResource tbTilte}" ></TextBlock>
+                        <TextBlock Margin="5 0 0 0" Text="Viết ngắn gọn, chính xác vị trí và công việc cần tuyển." Style="{StaticResource tbTilteExtra}" ></TextBlock>
+                        <TextBox Text="{Binding Title}" Height="35" FontSize="20" Margin="5 10 100 0" BorderThickness="1" materialDesign:HintAssist.Hint="VD: Nhân viên kinh doanh, Chăm sóc khách hàng, Lập trình viên PHP,..." 
+                             Padding="5 0 0 0"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Orientation="Vertical" Margin="35 10 0 0" >
+                        <TextBlock Text="Ngành nghề(Chuyên môn)*" Style="{StaticResource tbTilte}" ></TextBlock>
+                        <TextBlock Margin="5 0 0 0" Text="Ngành nghề liên quan đến vị trí tuyển dụng này." Style="{StaticResource tbTilteExtra}" ></TextBlock>
+                        <TextBox Text="{Binding  Major}" Height="35" FontSize="20" Margin="5 10 100 0" BorderThickness="1" materialDesign:HintAssist.Hint="VD: Lập trình, Thiết kế, Marketing..." 
+                             Padding="5 0 0 0"></TextBox>
+                    </StackPanel>
+                    <StackPanel Grid.Row="2" Orientation="Vertical" Margin="35 10 0 0" >
+                        <TextBlock Text="Địa chỉ làm việc*" Style="{StaticResource tbTilte}" ></TextBlock>
+                        <TextBlock Margin="5 0 0 0" Text="Ứng viên khi đi làm, sẽ làm việc tại địa chỉ này." Style="{StaticResource tbTilteExtra}" ></TextBlock>
+                        <TextBox Text="{Binding Place}" Height="35" FontSize="20" Margin="5 10 100 0" BorderThickness="1" materialDesign:HintAssist.Hint="VD: Tầng 46, Tòa Nhà Bitexco Financial Tower, Số 2 Hải Triều, Phường Bến Nghé, Quận 1, TP.HCM" 
+                             Padding="5 0 0 0"></TextBox>
+                    </StackPanel>
+                    <Border Grid.Row="3" BorderThickness="0 1" BorderBrush="#FFBDBDBD" Margin="40 10 70 0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition></RowDefinition>
+                                <RowDefinition></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid Grid.Row="0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0" Orientation="Vertical">
+                                    <TextBlock FontSize="20" Padding="10 10 0 0"  Text="Loại hình*: " ></TextBlock>
+                                    <TextBox Text="{Binding TypeJob}" Height="35" FontSize="20" Margin="5 0 100 0" BorderThickness="1" materialDesign:HintAssist.Hint="VD: Công ty nước ngoài, Khởi nghiệp,..." 
+                                                         Padding="5 0 0 0"></TextBox>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                                        <TextBlock FontSize="20" Padding="10 10 0 0"   Text="Lương*: " ></TextBlock>
+                                        <TextBox Text="{Binding Salary}" Height="35" FontSize="20" Margin="5 0 100 0" BorderThickness="1" materialDesign:HintAssist.Hint="VD: $500-$1000, Thương lượng,..." 
+                                                         Padding="5 0 0 0"></TextBox>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Grid>
+
+                            <Grid Grid.Row="1" Margin="0 0 0 15">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition></ColumnDefinition>
+                                    <ColumnDefinition></ColumnDefinition>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Column="0">
+                                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                                        <TextBlock  FontSize="20" Padding="10 10 0 0"  Text="Tính chất công việc: " ></TextBlock>
+                                        <TextBox Text="{Binding NatureOfJob}" Height="35" FontSize="20" Margin="5 0 100 0" BorderThickness="1" materialDesign:HintAssist.Hint="VD: Toàn thời gian, bán thời gian..." 
+                                                         Padding="5 0 0 0"></TextBox>
+                                    </StackPanel>
+                                </StackPanel>
+                                <StackPanel Grid.Column="1">
+                                    <StackPanel Grid.Column="0" Orientation="Vertical">
+                                        <TextBlock FontSize="20" Padding="10 10 0 0"  Text="Ngày đăng tuyển (MM/dd/yyyy): " ></TextBlock>
+                                        <TextBox Text="{Binding Timeregister}" Height="35" FontSize="20" Margin="5 0 100 0" BorderThickness="1" materialDesign:HintAssist.Hint="VD: 2/23/2019 (MM/dd/yyy)..." 
+                                                         Padding="5 0 0 0"></TextBox>
+                                    </StackPanel>
+                                </StackPanel>
+                            </Grid>
+                        </Grid>
+                    </Border>
+
+                    <StackPanel Grid.Row="4" Orientation="Vertical" Margin="35 10 0 0" >
+                        <TextBlock Text="Mô tả công việc*" Style="{StaticResource tbTilte}" ></TextBlock>
+                        <TextBlock Margin="5 0 0 0" Text="Mô tả công việc phải làm dựa theo vị trí ứng tuyển." Style="{StaticResource tbTilteExtra}" ></TextBlock>
+                        <TextBox Text="{Binding Descriptions}" FontSize="20" Margin="5 10 100 0" BorderThickness="1" TextWrapping="Wrap"
+                             Padding="5 0 0 0" VerticalScrollBarVisibility="Auto"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="5" Orientation="Vertical" Margin="35 10 0 0" >
+                        <TextBlock Text="Yêu cầu ứng viên*" Style="{StaticResource tbTilte}" ></TextBlock>
+                        <TextBlock Margin="5 0 0 0" Text="Các kỹ năng chuyên môn của ứng viên để đáp ứng nhu cầu công việc, các kỹ năng được ưu tiên của ứng viên... vv." Style="{StaticResource tbTilteExtra}" ></TextBlock>
+                        <TextBox Text="{Binding Request}" FontSize="20" Margin="5 10 100 0" BorderThickness="1" TextWrapping="Wrap"
+                             Padding="5 0 0 0" VerticalScrollBarVisibility="Auto"></TextBox>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="6" Orientation="Vertical" Margin="35 10 0 25" >
+                        <TextBlock Text="Quyền lợi ứng viên *" Style="{StaticResource tbTilte}" ></TextBlock>
+                        <TextBlock Margin="5 0 0 0" Text="Các quyền lợi ứng viên được hưởng khi được nhận vào công ty như chế độ đào tạo, bảo hiểm, nghỉ mát, hoa hồng.. vv" Style="{StaticResource tbTilteExtra}" ></TextBlock>
+                        <TextBox Text="{Binding MoreInfo}" FontSize="20" Margin="5 10 100 0" BorderThickness="1" TextWrapping="Wrap"
+                             Padding="5 0 0 0" VerticalScrollBarVisibility="Auto"></TextBox>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </ScrollViewer>
+
+
+
+</Window>
+

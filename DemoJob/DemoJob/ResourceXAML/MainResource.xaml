@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:DemoJob.ViewModel"
+                    xmlns:local="clr-namespace:DemoJob.ResourceXAML">
+    <viewmodel:MainViewModel x:Key="MainVM"></viewmodel:MainViewModel>
+    <viewmodel:LoginViewModel x:Key="LoginVM"></viewmodel:LoginViewModel>
+    <viewmodel:InforMemberViewModel x:Key="InforMemberVM"></viewmodel:InforMemberViewModel>
+    <viewmodel:RegisterViewModel x:Key="RegisterVM"></viewmodel:RegisterViewModel>
+    <viewmodel:InfoJobViewModel x:Key="InfoJobVM"></viewmodel:InfoJobViewModel>
+    <viewmodel:CompanyViewModel x:Key="CompanyVM"></viewmodel:CompanyViewModel>
+    <viewmodel:InforCompanyViewModel x:Key="InforCompanyVM"></viewmodel:InforCompanyViewModel>
+    <viewmodel:RegisterJobViewModel x:Key="RegisterJobVM"></viewmodel:RegisterJobViewModel>
+    <viewmodel:InfoJobCompanyViewModel x:Key="InfoJobCompanyVM"></viewmodel:InfoJobCompanyViewModel>
+    <viewmodel:InfoMemberCompanyViewModel x:Key="InfoMemberCompanyVM"></viewmodel:InfoMemberCompanyViewModel>
+    <viewmodel:ChangePasswordViewModel x:Key="ChangePasswordVM"></viewmodel:ChangePasswordViewModel>
+</ResourceDictionary>

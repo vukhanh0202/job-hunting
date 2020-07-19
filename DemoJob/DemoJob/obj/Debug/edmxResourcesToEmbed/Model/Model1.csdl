@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoJobModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AccountRole">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DisplayName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Accounts" Relationship="Self.FK__Accounts__IdAcco__1273C1CD" FromRole="AccountRoles" ToRole="Accounts" />
+  </EntityType>
+  <EntityType Name="Account">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PassWord" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="IdAccountRoles" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="AccountRole" Relationship="Self.FK__Accounts__IdAcco__1273C1CD" FromRole="Accounts" ToRole="AccountRoles" />
+    <NavigationProperty Name="Company" Relationship="Self.FK__Company__Id__15502E78" FromRole="Accounts" ToRole="Company" />
+    <NavigationProperty Name="Member" Relationship="Self.FK__Member__Id__182C9B23" FromRole="Accounts" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="MoreInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Account" Relationship="Self.FK__Company__Id__15502E78" FromRole="Company" ToRole="Accounts" />
+    <NavigationProperty Name="Jobs" Relationship="Self.FK__Job__MoreInfo__1B0907CE" FromRole="Company" ToRole="Job" />
+  </EntityType>
+  <EntityType Name="Job">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdCompany" Type="Int32" Nullable="false" />
+    <Property Name="TypeJob" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="NatureOfJob" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Major" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Place" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Request" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Descriptions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="MoreInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Company" Relationship="Self.FK__Job__MoreInfo__1B0907CE" FromRole="Job" ToRole="Company" />
+    <NavigationProperty Name="Members" Relationship="Self.Register" FromRole="Job" ToRole="Member" />
+  </EntityType>
+  <EntityType Name="Member">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Phone" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Age" Type="Int32" />
+    <Property Name="Sex" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="MoreInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Account" Relationship="Self.FK__Member__Id__182C9B23" FromRole="Member" ToRole="Accounts" />
+    <NavigationProperty Name="Jobs" Relationship="Self.Register" FromRole="Member" ToRole="Job" />
+  </EntityType>
+  <Association Name="FK__Accounts__IdAcco__1273C1CD">
+    <End Role="AccountRoles" Type="Self.AccountRole" Multiplicity="1" />
+    <End Role="Accounts" Type="Self.Account" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AccountRoles">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Accounts">
+        <PropertyRef Name="IdAccountRoles" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Company__Id__15502E78">
+    <End Role="Accounts" Type="Self.Account" Multiplicity="1" />
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Member__Id__182C9B23">
+    <End Role="Accounts" Type="Self.Account" Multiplicity="1" />
+    <End Role="Member" Type="Self.Member" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Member">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Job__MoreInfo__1B0907CE">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Job" Type="Self.Job" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Job">
+        <PropertyRef Name="IdCompany" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="Register">
+    <End Role="Job" Type="Self.Job" Multiplicity="*" />
+    <End Role="Member" Type="Self.Member" Multiplicity="*" />
+  </Association>
+  <EntityContainer Name="DemoJobEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AccountRoles" EntityType="Self.AccountRole" />
+    <EntitySet Name="Accounts" EntityType="Self.Account" />
+    <EntitySet Name="Companies" EntityType="Self.Company" />
+    <EntitySet Name="Jobs" EntityType="Self.Job" />
+    <EntitySet Name="Members" EntityType="Self.Member" />
+    <AssociationSet Name="FK__Accounts__IdAcco__1273C1CD" Association="Self.FK__Accounts__IdAcco__1273C1CD">
+      <End Role="AccountRoles" EntitySet="AccountRoles" />
+      <End Role="Accounts" EntitySet="Accounts" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Company__Id__15502E78" Association="Self.FK__Company__Id__15502E78">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Company" EntitySet="Companies" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Member__Id__182C9B23" Association="Self.FK__Member__Id__182C9B23">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Member" EntitySet="Members" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Job__MoreInfo__1B0907CE" Association="Self.FK__Job__MoreInfo__1B0907CE">
+      <End Role="Company" EntitySet="Companies" />
+      <End Role="Job" EntitySet="Jobs" />
+    </AssociationSet>
+    <AssociationSet Name="Register" Association="Self.Register">
+      <End Role="Job" EntitySet="Jobs" />
+      <End Role="Member" EntitySet="Members" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8784c35039244a2099ea199d85e07ee7" Name="Diagram1" ZoomLevel="72">
+        <EntityTypeShape EntityType="JOBModel.AccountRole" Width="1.5" PointX="0.75" PointY="5.5" />
+        <EntityTypeShape EntityType="JOBModel.Account" Width="1.5" PointX="3" PointY="5" />
+        <EntityTypeShape EntityType="JOBModel.Company" Width="1.5" PointX="5.25" PointY="10.75" />
+        <EntityTypeShape EntityType="JOBModel.Degree" Width="1.5" PointX="3" PointY="10" />
+        <EntityTypeShape EntityType="JOBModel.Experience" Width="1.5" PointX="3" PointY="17" />
+        <EntityTypeShape EntityType="JOBModel.Job" Width="1.5" PointX="7.5" PointY="10.375" />
+        <EntityTypeShape EntityType="JOBModel.LanguageSkill" Width="1.5" PointX="3" PointY="13.625" />
+        <EntityTypeShape EntityType="JOBModel.Member" Width="1.5" PointX="5.25" PointY="3.625" />
+        <EntityTypeShape EntityType="JOBModel.OfficeSkill" Width="1.5" PointX="3" PointY="20.25" />
+        <EntityTypeShape EntityType="JOBModel.Register" Width="1.5" PointX="9.75" PointY="8.625" />
+        <AssociationConnector Association="JOBModel.FK__Accounts__IdAcco__1A14E395" />
+        <AssociationConnector Association="JOBModel.FK__Company__IdAccou__1B0907CE" />
+        <AssociationConnector Association="JOBModel.FK__Register__IdAcco__1DE57479" />
+        <AssociationConnector Association="JOBModel.FK_MEMBER_IdAccount" />
+        <AssociationConnector Association="JOBModel.FK__Job__IdCompany__1BFD2C07" />
+        <AssociationConnector Association="JOBModel.FK_MEMBER_IdDegree" />
+        <AssociationConnector Association="JOBModel.FK_MEMBER_IdExperience" />
+        <AssociationConnector Association="JOBModel.FK__Register__IdJob__1ED998B2" />
+        <AssociationConnector Association="JOBModel.FK_MEMBER_IdLanguageSkill" />
+        <AssociationConnector Association="JOBModel.FK_MEMBER_IdOfficeSkill" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

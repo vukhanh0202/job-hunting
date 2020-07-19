@@ -1,0 +1,3 @@
+- Chạy file sql trước khi sử dụng phần mềm (Nằm trong folder Database)
+- Chỉnh display setting về 100% để đạt chất lượng giao diện ổn định (display setting -> Scale and layout -> 100%)
+- Sau khi cài đặt chạy phần mềm dưới quyền admin để không xảy ra lỗi

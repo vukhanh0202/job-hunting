@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCB31BF6-A264-477E-9806-0F7C6E938E2F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DemoJob</RootNamespace>
+    <AssemblyName>DemoJob</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignColors, Version=1.2.0.325, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.0\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=2.6.0.325, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.2.6.0\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Interactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\Microsoft.Expression.Interactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Windows.Interactivity.WPF.2.0.20525\lib\net40\System.Windows.Interactivity.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ChangePasswordWindow.xaml.cs">
+      <DependentUpon>ChangePasswordWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CompanyWindow.xaml.cs">
+      <DependentUpon>CompanyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationCompanyWindow.xaml.cs">
+      <DependentUpon>InformationCompanyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationJobCompanyWindow.xaml.cs">
+      <DependentUpon>InformationJobCompanyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationJobWindow.xaml.cs">
+      <DependentUpon>InformationJobWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationMemberCompanyWindow.xaml.cs">
+      <DependentUpon>InformationMemberCompanyWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="InformationMemberWindow.xaml.cs">
+      <DependentUpon>InformationMemberWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Account.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AccountRole.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Company.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataProvider.cs" />
+    <Compile Include="Model\Degree.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Experience.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Job.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LanguageSkill.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Member.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model123.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model123.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model123.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model123.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model123.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\OfficeSkill.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Register.cs">
+      <DependentUpon>Model123.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterJob.xaml.cs">
+      <DependentUpon>RegisterJob.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterWindow.xaml.cs">
+      <DependentUpon>RegisterWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewModel\BaseViewModel.cs" />
+    <Compile Include="ViewModel\ChangePasswordViewModel.cs" />
+    <Compile Include="ViewModel\CompanyViewModel.cs" />
+    <Compile Include="ViewModel\InfoJobCompanyViewModel.cs" />
+    <Compile Include="ViewModel\InfoJobViewModel.cs" />
+    <Compile Include="ViewModel\InfoMemberCompanyViewModel.cs" />
+    <Compile Include="ViewModel\InforCompanyViewModel.cs" />
+    <Compile Include="ViewModel\InforMemberViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="ViewModel\RegisterJobViewModel.cs" />
+    <Compile Include="ViewModel\RegisterViewModel.cs" />
+    <Page Include="ChangePasswordWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CompanyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationCompanyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationJobCompanyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationJobWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationMemberCompanyWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InformationMemberWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="RegisterJob.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegisterWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ResourceXAML\MainResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\Model123.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model123.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Resource Include="Font\BentonSans Black.otf" />
+    <None Include="Model\Model123.edmx.diagram">
+      <DependentUpon>Model123.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Picture\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Picture\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Picture\envelope.png" />
+    <Resource Include="Picture\timetable.png" />
+    <Resource Include="Picture\Phone.png" />
+    <Resource Include="Picture\location-outline.png" />
+    <Resource Include="AvatarMember\Avatar.png" />
+    <Resource Include="LogoPicture\Avatar.png" />
+    <Content Include="Model\Model123.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model123.edmx</DependentUpon>
+      <LastGenOutput>Model123.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model123.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model123.edmx</DependentUpon>
+      <LastGenOutput>Model123.cs</LastGenOutput>
+    </Content>
+    <Resource Include="Picture\LOGOMAIN.ico" />
+    <Resource Include="Picture\InforJob.jpg" />
+    <Resource Include="Picture\LOGOMAIN.png" />
+    <Resource Include="Picture\account.png" />
+    <Resource Include="Picture\Logo.png" />
+    <Resource Include="Picture\LoginWindow.jpg" />
+    <Resource Include="Picture\JOB.jpg" />
+    <Resource Include="Picture\BackGroundCompany.jpg" />
+    <Resource Include="Picture\VerticalBackGround.jpg" />
+    <Resource Include="Picture\MainMember.jpg" />
+    <Resource Include="Picture\df2ab134296ab134288060e51d69ec7e_674853_QWJEVHTNG3U69.jpg" />
+    <Resource Include="Picture\business-background-design_1200-145.jpg" />
+    <Resource Include="Picture\061015opinionnet_1280x720.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

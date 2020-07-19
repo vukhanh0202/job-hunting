@@ -1,0 +1,289 @@
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe.config
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.pdb
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.dll
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.pdb
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csprojAssemblyReference.cache
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.g.cs
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\App.g.cs
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.cache
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.lref
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\App.baml
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.baml
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.g.resources
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.Properties.Resources.resources
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.GenerateResource.cache
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CoreCompileInputs.cache
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CopyComplete
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.exe
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.pdb
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\ResourceXAML\MainResource.baml
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.g.cs
+D:\UIT Kì III\Lập trình trực quan\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe.config
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.pdb
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.dll
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.dll
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.pdb
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.xml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csprojAssemblyReference.cache
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\App.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.cache
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.lref
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\App.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\ResourceXAML\MainResource.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.g.resources
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.Properties.Resources.resources
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.GenerateResource.cache
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CoreCompileInputs.cache
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CopyComplete
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.exe
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.pdb
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_Content.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.dll
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.dll
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.xml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.xml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.baml
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.g.cs
+D:\TestMySelf\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe.config
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.pdb
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.dll
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.xml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csprojAssemblyReference.cache
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\App.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_Content.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.cache
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.lref
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\App.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\ResourceXAML\MainResource.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.g.resources
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.exe
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.pdb
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.baml
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.g.cs
+C:\Users\ADMIN\Desktop\Đồ án LTTQ\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe.config
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.pdb
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.dll
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.dll
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.xml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.pdb
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csprojAssemblyReference.cache
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\Window1.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\App.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_Content.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.cache
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.lref
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\App.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\ResourceXAML\MainResource.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\Window1.baml
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.g.resources
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.Properties.Resources.resources
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.GenerateResource.cache
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CoreCompileInputs.cache
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CopyComplete
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.exe
+C:\Users\VuKhanh\Downloads\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.pdb
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe.config
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.exe
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\DemoJob.pdb
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.dll
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.dll
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.dll
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.dll
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.xml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.xml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.pdb
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.xml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csprojAssemblyReference.cache
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\App.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_Content.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.cache
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.lref
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\App.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\CompanyWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationJobWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\ListJobWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\LoginWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\MainWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterJob.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\RegisterWindow.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\ResourceXAML\MainResource.baml
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.g.resources
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.Properties.Resources.resources
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.GenerateResource.cache
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CoreCompileInputs.cache
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CopyComplete
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.exe
+D:\UIT Kì III\Của phong ngày 612\Test Demo Done\Test Demo\DemoJob\DemoJob\obj\Debug\DemoJob.pdb
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\DemoJob.exe.config
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\DemoJob.exe
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\DemoJob.pdb
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\EntityFramework.dll
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.dll
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.dll
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.dll
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\EntityFramework.xml
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\EntityFramework.SqlServer.xml
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\MaterialDesignColors.pdb
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\BackupSolution\DemoJob\DemoJob\bin\Debug\System.Windows.Interactivity.xml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.csprojAssemblyReference.cache
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\CompanyWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationJobWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\LoginWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\MainWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\RegisterJob.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\RegisterWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\App.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob_Content.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.cache
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob_MarkupCompile.lref
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\App.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\CompanyWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationCompanyWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationJobCompanyWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationJobWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationMemberCompanyWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\InformationMemberWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\LoginWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\MainWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\RegisterJob.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\RegisterWindow.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\ResourceXAML\MainResource.baml
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.g.resources
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.Properties.Resources.resources
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.GenerateResource.cache
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CoreCompileInputs.cache
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.csproj.CopyComplete
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.exe
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\DemoJob.pdb
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\ChangePasswordWindow.g.cs
+D:\BackupSolution\DemoJob\DemoJob\obj\Debug\ChangePasswordWindow.baml
